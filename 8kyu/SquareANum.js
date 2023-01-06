@@ -4,3 +4,11 @@
 let num = 5;
 let square = num * num;
 console.log(square);
+
+// Try 2
+function calcSquare(num) {
+  let square = num * num;
+  console.log(square);
+}
+
+calcSquare(5);
