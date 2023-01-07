@@ -12,3 +12,8 @@ function calcSquare(num) {
 }
 
 calcSquare(5);
+
+// Try 3
+function square(num) {
+  return num * num;
+}
