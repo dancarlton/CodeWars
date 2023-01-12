@@ -15,3 +15,8 @@
 String.prototype.isUpperCase = function () {
   return this.toString() === this.isUpperCase();
 };
+
+// Try 2
+String.prototype.isUpperCase = function () {
+  return this.toString() === this.toUpperCase();
+};
