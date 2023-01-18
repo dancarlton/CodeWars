@@ -24,7 +24,26 @@
 // Note:
 // Don't forget to convert the percent parameter as a percentage in the body of your function: if the parameter percent is 2 you have to convert it to 0.02.
 
-
+// First Try
 function nbYear(p0, percent, aug, p) {
-    // your code
+    while (currentPopulation < p) {
+        currentPopulation += currentPopulation * percent + aug;
+        years++;
+        }
+        
+        return years;
+}
+
+// Second Try (has 1 error but 100 passed)
+function nbYear(p0, percent, aug, p) {
+    let currentPopulation = p0;
+    let years = 0;
+    percent = percent / 100;
+    
+    while (currentPopulation < p) {
+    currentPopulation += currentPopulation * percent + aug;
+    years++;
+    }
+    
+    return years;
 }
