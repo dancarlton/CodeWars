@@ -20,4 +20,15 @@ function stray(numbers) {
   return 0;
 }
 
+// Try 2
+function stray(numbers) {
+  let strayNums = numbers[0];
 
+  if (strayNums !== numbers[1] && strayNums !== numbers[2]) return strayNums;
+
+  for (let i = 1; i < numbers.length; i++) {
+    if (strayNums !== numbers[i]) return numbers[i];
+  }
+
+  return 0;
+}
