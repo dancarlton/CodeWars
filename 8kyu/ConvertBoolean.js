@@ -8,3 +8,8 @@ function boolToWord(bool) {
     return 'No';
   }
 }
+
+// Try 2
+function boolToWord(bool) {
+  return bool ? 'Yes' : 'No';
+}
