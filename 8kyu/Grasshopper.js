@@ -6,3 +6,6 @@ function greet (name, owner) {
 }
 
 // Second Try
+function greet (name, owner) {
+    alert(`Hello ${name} and ${owner}`)
+}
