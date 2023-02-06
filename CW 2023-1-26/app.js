@@ -20,6 +20,7 @@
 // }
 
 // attempt 2: (correct, changed the colon to semi colon)
+
 function findNeedle(haystack){
     for (i = 0 ; i < haystack.length ; i++){
         if (haystack[i] === 'needle')
