@@ -12,5 +12,5 @@
 
 // First Try
 var number = function(busStops){
-    // Good Luck!
+
   }
