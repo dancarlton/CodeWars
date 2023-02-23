@@ -18,14 +18,14 @@
 //   };
 
 // Second Try
-const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
-    let distanceToPump = 50
-    let mpg = 25
-    let fuelLeft = 2
+// const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+//     let distanceToPump = 50
+//     let mpg = 25
+//     let fuelLeft = 2
     
-    if (mpg * fuelLeft >= distanceToPump) {
-        return true
-    } else {
-        return false
-    }
-  };
+//     if (mpg * fuelLeft >= distanceToPump) {
+//         return true
+//     } else {
+//         return false
+//     }
+//   };
