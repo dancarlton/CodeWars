@@ -15,9 +15,9 @@
 // However, the arrays can have varying lengths, not just limited to 4.
 
 // First Try
-const binaryArrayToNumber = arr => {
-    return arr.map()
-  };
+// const binaryArrayToNumber = arr => {
+//     return arr.map()
+//   };
 
 // Second Try
 const binaryArrayToNumber = arr => {
