@@ -8,3 +8,12 @@ function evenOrOdd(number) {
       return 'Odd'
     }
   }
+
+// SECOND TRY
+function evenOrOdd(number) {
+      if (number % 2 === 0) {
+        return 'Even'
+      } else {
+        return 'Odd'
+      }
+    }
