@@ -13,8 +13,6 @@
 
 // ATTEMPT 1
 function getAverage(marks) {
-  marks = [1, 2, 3, 4, 5]
-
   // add all numbers in array
   let sum = 0
 
@@ -23,28 +21,32 @@ function getAverage(marks) {
     sum += marks[i]
   }
 
-  let sumAll = marks.length
+  //count amount of numbers in array
+  let count = marks.length
 
   // divide by the amount of numbers in array
+  let average = sum / count
 
-  let average = {}
+  // return average
+  return Math.floor(average)
 }
-
+const marks = [1, 2, 3, 4, 5]
+const results = getAverage.marks
 
 // ATTEMPT 2
 
 function getAverage(arr) {
-    //loop arr -> adding to sum
-    let sum = arr.reduce((a, c) => a + c)
-    // avg div sum / total num of nums in arr
-    let avg = sum / arr.length
-    // round down
-    return Math.floor(avg)
+  //loop arr -> adding to sum
+  let sum = arr.reduce((a, c) => a + c)
+  // avg div sum / total num of nums in arr
+  let avg = sum / arr.length
+  // round down
+  return Math.floor(avg)
 }
 
 // ATTEMPT 3
 
-const getAverage = arr => Math.floor( arr.reduce((a,c) => a+c) / arr.length)
+const getAverage = arr => Math.floor(arr.reduce((a, c) => a + c) / arr.length)
 
 console.log(getAverage([2, 2, 2, 2]), 2)
 console.log(getAverage([1, 2, 3, 4, 5]), 3)
