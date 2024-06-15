@@ -22,3 +22,6 @@
 // (+ has no visible effects so we can safely ignore it.)
 
 
+function HQ9(code) {
+    //finish me
+  }
