@@ -22,6 +22,12 @@
 // (+ has no visible effects so we can safely ignore it.)
 
 
-function HQ9(code) {
-    //finish me
+function HQ9(input) {
+    if (input === 'H') {
+      console.log('Hello World!')
+    } else if (input === 'Q') {
+      return input
+    } else if (input === '9') {
+      console.log('99 bottles of beer on the wall, 99 bottles of beer.')
+    }
   }
