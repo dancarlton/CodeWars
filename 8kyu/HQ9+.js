@@ -21,13 +21,33 @@
 // For everything else, don't return anything (return null in C#, None in Rust, and "" in Haskell).
 // (+ has no visible effects so we can safely ignore it.)
 
+// Attempt 1
+function HQ9(input) {
+  if (input === 'H') {
+    console.log('Hello World!')
+  } else if (input === 'Q') {
+    return input
+  } else if (input === '9') {
+    console.log('99 bottles of beer on the wall, 99 bottles of beer.')
+  }
+}
 
+// Attempt 2
 function HQ9(input) {
     if (input === 'H') {
-      console.log('Hello World!')
+        return 'Hello World!';
     } else if (input === 'Q') {
-      return input
+        return input;
     } else if (input === '9') {
-      console.log('99 bottles of beer on the wall, 99 bottles of beer.')
+        let lyrics = '';
+        for (let i = 99; i > 0; i--) {
+            lyrics += `${i} ${i === 1 ? 'bottle' : 'bottles'} of beer on the wall, ${i} ${i === 1 ? 'bottle' : 'bottles'} of beer.\n`;
+            lyrics += `Take one down and pass it around, ${i - 1 === 0 ? 'no more' : i - 1} ${i - 1 === 1 ? 'bottle' : 'bottles'} of beer on the wall.\n`;
+        }
+        lyrics += 'No more bottles of beer on the wall, no more bottles of beer.\n';
+        lyrics += 'Go to the store and buy some more, 99 bottles of beer on the wall.';
+        return lyrics;
+    } else {
+        return undefined;
     }
-  }
+}
